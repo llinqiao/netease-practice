@@ -6,7 +6,8 @@
 	<style type="text/css">
 	body{margin: 0,padding: 0;}
 	ul,span,div img{padding: 0;margin: 0;}
-	.center{margin: 0 auto;}
+	.center{margin: 0 auto;background-color: #f8f8f8;}
+	.clearfix:after{content: ".";display: block;clear:both;height: 0;overflow: hidden;visibility: hidden;}
 		.header{height: 89px;width: 1616px;}
 		.header .left-image{margin-left: 207px;margin-top: 30px;}
 		.header .middle-image{margin-left: 31px}
@@ -37,6 +38,41 @@
 		.pictureshow-images{display: inline-block;width: 320px;height: 221px;vertical-align: top;margin: 2px;}
 		.pictureshow .left-images{margin-left: 0;}
 		.pictureshow .right-images{margin-right: 0;}
+
+
+		.type{width: 1616px;height: 1552px;font-size: 0;}
+		.type-left{float: left;width: 956px;height: 1552px;margin-left: 205px;}
+		.type .top{width: 400px;height: 50px;margin-top: 80px;font-size: 0;display: inline-block;}
+		.type .top-same{width: 200px;height: 50px;display: inline-block; font-size: 20px;text-align: center;line-height: 45px;}
+		.type .top-left{background-color: green;color: white;}
+		.type .top-right{background-color: white;color: gray;}
+
+		.type .item-top{width: 956px;height: 228px;margin-top: 30px;font-size: 0;}
+		.type .item-same{width: 956px;height: 228px;margin-top: 20px;font-size: 0;}
+		.type .item-list{width: 224px;height: 228px;display: inline-block;margin-right: 20px;vertical-align: top;}
+		.type .item-lastlist{margin-right: 0;}
+		.type .term-image{width: 224px;height: 124px;}
+		.type .term-text{margin-left: 4px;font-size: 12px;margin-top: 10px;}
+		.type .term-toptext{color: black;margin-top: 10px;}
+		.type .term-middletext{color: gray;margin-top: 10px;}
+		.type .term-bottomtext{color: red;margin-top: 15px;}
+
+		.type-right{float: right;width: 223px;height: 1028px;margin-top: 84px;margin-right: 205px;}
+		.type .right-top{width: 223px;height: 84px;border:  1px gray solid;}
+		.type .righttop-text{font-size: 16px;font-weight: bold; color: black;margin-left: 20px;margin-top: 20px;display: inline-block;}
+		.type .video{width: 223px;height: 173px;border: 1px gray solid;}
+		.type .video-text{font-size: 14px;color: gray;margin-left: 20px;margin-top: 20px;display: inline-block;}
+		.type .video-image{margin-left: 20px;margin-top: 10px}
+		.type .list{width: 223px;height: 778px;}
+		.type .list-header{height: 60px;width: 223px;border:  1px gray solid;margin-top: 20px;}
+		.type .list-explain{height: 793px;width: 223px;border:  1px gray solid;}
+		.type .explain-item{width: 183px;height: 50px;margin: 20px}
+		.type .explain-image{width: 50px;height: 50px;display: inline-block;}
+		.type .explian-right{width: 120px;height: 50px;display: inline-block;margin-left: 10px;vertical-align: top;}
+		.type .explian-text{font-size: 10px;font-weight: bold; color: black;}
+		.type .text-image{margin-top: 10px;display: inline-block;}
+
+
 		
 		
 
@@ -45,6 +81,7 @@
 	</style>
 </head>
 <body>
+<div class="clearfix">
 	<div class="header center">
 		<img class="left-image" src="./images/photo1.png">
 		<img class="middle-image" src="./images/photo2.png">
@@ -99,8 +136,316 @@
 		<div class="pictureshow-images"><img src="./images/photo9.png"></div>
 		<div class="pictureshow-images"><img src="./images/photo10.png"></div>
 		<div class="pictureshow-images right-images"><img src="./images/photo11.png"></div>
-		
 	</div>
+
+
+	<div class="type center">
+		<div class="type-left">
+			<div class="top">
+				<div class="top-left top-same">产品设计</div>
+				<div class="top-right top-same">编程语言</div>
+			</div>
+			<div class="item-top">
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list item-lastlist">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-same">
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list item-lastlist">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-same">
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list item-lastlist">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-same">
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list item-lastlist">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-same">
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list item-lastlist">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-same">
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+				<div class="item-list item-lastlist">
+					<div class="term-image"><img src="./images/photo12.png"></div>
+					<div class="term-text">
+						<div class="term-toptext">混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</div>
+						<div class="term-middletext"><img src="./images/photo13.png"></div>
+						<div class="term-bottomtext">￥ 800.00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="type-right">
+			<div class="right-top">
+				<div class="righttop-text">机构介绍</div>
+			</div>
+			<div class="video">
+				<div class="video-text">观看下面的视频来了解吧：</div>
+				<div class="video-image"><img src="./images/photo14.png"></div>
+			</div>
+			<div class="list">
+				<div class="list-header">
+					<div class="righttop-text">最热排行</div>
+				</div>
+				<div class="list-explain">
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+					<div class="explain-item">
+						<div class="explain-image"><img src="./images/photo15.png"></div>
+						<div class="explian-right">
+							<div class="explian-text">舞曲揭秘 音乐揭秘...</div>
+							<div class="text-image"><img src="./images/photo16.png"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
