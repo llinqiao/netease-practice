@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-	body，ul,span,div img{padding: 0;margin: 0;}
+	body{margin: 0,padding: 0;}
+	ul,span,div img{padding: 0;margin: 0;}
 	.center{margin: 0 auto;background-color: #f8f8f8;}
 	.clearfix:after{content: ".";display: block;clear:both;height: 0;overflow: hidden;visibility: hidden;}
-		.header{height: 89px;width: 1616px;}
+		.header{height: 89px;width: 100%;}
 		.header .left-image{margin-left: 207px;margin-top: 30px;}
 		.header .middle-image{margin-left: 31px}
 		.header .left-text{display: inline-block; margin-left: 14px;margin-top: 35px; font-size: 12px;color: gray;vertical-align: top;}
@@ -15,9 +16,9 @@
 		.header .li{display: inline-block;font-size: 16px;color: gray;margin:0 27px;}
 		.header .li-image{display: inline-block; margin: 0 3px;vertical-align: top;}
 
-		.banner{height: 460px;width: 1616px;background-image: url(./images/banner1.jpg);}
+		.banner{height: 460px;width: 100%;background-image: url(./images/banner1.jpg);}
 
-		.introduction{height: 297px;width: 1616px;}
+		.introduction{height: 297px;width: 100%;overflow: auto;}
 		.introduction .common-box{display: inline-block; width: 340px;height: 100%;}
 		.introduction .common-image{float: left; margin-top: 68px;display: inline-block;}
 		.introduction .common-text{float: right;margin-top: 60px;display: inline-block;}
@@ -31,13 +32,13 @@
 
 
 
-		.pictureshow{height: 221px;width: 1616px;font-size: 0;}
+		.pictureshow{height: 221px;width: 100%;font-size: 0;overflow: auto;}
 		.pictureshow-images{display: inline-block;width: 320px;height: 221px;vertical-align: top;margin: 2px;}
 		.pictureshow .left-images{margin-left: 0;}
 		.pictureshow .right-images{margin-right: 0;}
 
 
-		.type{width: 1616px;height: 1552px;font-size: 0;}
+		.type{width: 100%;height: 1552px;font-size: 0;overflow: scroll;}
 		.type-left{float: left;width: 956px;height: 1552px;margin-left: 205px;}
 		.type .top{width: 400px;height: 50px;margin-top: 80px;font-size: 0;display: inline-block;}
 		.type .top-same{width: 200px;height: 50px;display: inline-block; font-size: 20px;text-align: center;line-height: 45px;}
@@ -75,7 +76,7 @@
 		.option .text-background{width: 20px;height: 20px;background-color: green;text-align: center;}
 
 
-		.bottom{width: 1616px;height: 262px;margin-top: 350px;background-color: #2c3339;font-size: 0;}
+		.bottom{width: 100%;height: 262px;background-color: #2c3339;font-size: 0;overflow: auto;}
 		.bottom-left{width: 800px;height: 262px;display: inline-block;vertical-align: top;}
 		.bottom .left-toptext{margin-top: 92px;margin-left: 255px;color: green;font-size: 22px;}
 		.bottom .left-bottomtext{margin-top: 30px;margin-left: 255px;color: white;font-size: 12.5px;line-height: 25px;}
