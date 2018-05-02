@@ -4,13 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-	body{margin: 0;padding: 0;}
-	body,ul,span,div,{margin: 0;padding: 0;}
+	body,ul,span,div{margin: 0;padding: 0;}
 	img{margin: 0;}
 	.center{margin: 0 auto;}
 	.clearfix:after{content: ".";display: block;clear:both;height: 0;overflow: hidden;visibility: hidden;}
-		.header{height: 89px;width: 100%;overflow: auto;}
-		.header-border{height: 89px;width: 1190px;font-size: 0;}
+		.header{height: 92px;width: 100%;overflow: auto;}
+		.header-border{height: 92px;width: 1190px;font-size: 0;}
 		.header .left-image{margin-top: 30px;}
 		.header .middle-image{margin-left: 31px}
 		.header .left-text{display: inline-block; margin-left: 14px;margin-top: 35px; font-size: 12px;color: gray;vertical-align: top;}
@@ -19,7 +18,7 @@
 		.header .li-image{display: inline-block; margin: 0 3px;vertical-align: top;}
 
 		.banner{height: 460px;width: 100%;background-image: url(./images/banner1.jpg);overflow: auto;}
-		.banner-border{height: 460px;width: 1616px;}
+		.banner-border{height: auto;width: 100%;}
 
 
 		.introduction{height: 297px;width: 100%;overflow: auto;}
@@ -36,9 +35,9 @@
 
 
 
-		.pictureshow{height: 223px;width: 100%;overflow: auto;}
-		.pictureshow-border{height: 221px;width: 1616px;font-size: 0;}
-		.pictureshow-images{display: inline-block;width: 320px;height: 221px;vertical-align: top;margin:0 2px;}
+		.pictureshow{height: auto;width: 100%;overflow: scroll;}
+		.pictureshow-border{width: 1616px;font-size: 0;}
+		.pictureshow-images{display: inline-block;width: 320px;vertical-align: top;margin:0 2px;}
 		.pictureshow .left-images{margin-left: 0;}
 		.pictureshow .right-images{margin-right: 0;}
 
@@ -83,16 +82,16 @@
 		.option .text-background{width: 20px;height: 20px;background-color: green;text-align: center;}
 
 
-		.bottom{width: 100%;height: 265px;background-color: #2c3339;font-size: 0;overflow: auto;}
-		.bottom-border{width: 1616px;height: 265px;}
-		.bottom-left{width: 800px;height: 262px;display: inline-block;vertical-align: top;}
-		.bottom .left-toptext{margin-top: 92px;margin-left: 255px;color: green;font-size: 22px;}
-		.bottom .left-bottomtext{margin-top: 30px;margin-left: 255px;color: white;font-size: 12.5px;line-height: 25px;}
-		.bottom-right{width: 816px;height: 262px;display: inline-block;}
+		.bottom{width: 100%;height: 265px;background-color: #2c3339;overflow: auto;}
+		.bottom-border{width: 950px;height: 265px;font-size: 0;}
+		.bottom-left{width: 545px;height: 265px;display: inline-block;vertical-align: top;}
+		.bottom .left-toptext{margin-top: 92px;color: green;font-size: 22px;}
+		.bottom .left-bottomtext{margin-top: 30px;color: white;font-size: 12.5px;line-height: 25px;}
+		.bottom-right{width: 405px;height: 265px;display: inline-block;}
 		.bottom .right-same{height: 100px;display: inline-block;margin-top: 82px;}
 		.bottom .right-connect{width: 209px;}
 		.bottom .right-ours{width: 135px;}
-		.bottom .right-more{width: 472px;vertical-align: top;}
+		.bottom .right-more{width: 60px;vertical-align: top;}
 		.bottom .li-text{color: white;list-style-type:none;line-height: 29.17px;}
 		.bottom .li-first{font-size: 12.5px;}
 		.bottom .li{font-size: 14.58px;}
@@ -444,13 +443,13 @@
 	</div>
 </div>
 
-<div class="bottom center">
+<div class="bottom">
 	<div class="bottom-border center">
-			<div class="bottom-left">
+		<div class="bottom-left">
 			<div class="left-toptext">EDU | 网易教育产品部</div>
 			<div class="left-bottomtext">@ 2014 icourse163.org 浙ICP备08114786号-1<br/>icourse.cn 京ICP备12020869号-2 京公网安备1101020004590-2</div>
-			</div>
-			<div class="bottom-right">
+		</div>
+		<div class="bottom-right">
 			<div class="right-same right-connect">
 				<ul>
 					<li class="li-first li-text">友情链接：</li>
@@ -474,7 +473,7 @@
 					<li class="li li-text">意见反馈</li>
 				</ul>
 			</div>
-			</div>
+		</div>
 	</div>
 </div>	
 </body>
